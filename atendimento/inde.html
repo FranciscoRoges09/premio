@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typebot - Tema WhatsApp</title>
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        background: #fff;
+      }
+      typebot-standard {
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <typebot-standard id="meu-typebot"></typebot-standard>
+
+    <script type="module">
+      import Typebot from "https://cdn.jsdelivr.net/npm/@typebot.io/js@0.2/dist/web.js";
+
+      Typebot.initStandard({
+        typebot: "tema-whatsapp-3is0nkd", // <-- seu ID do Typebot
+        container: document.getElementById("meu-typebot"),
+      });
+    </script>
+  </body>
+</html>
